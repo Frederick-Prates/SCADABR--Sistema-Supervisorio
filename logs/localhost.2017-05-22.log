@@ -1,0 +1,44 @@
+22/05/2017 09:09:36 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+22/05/2017 09:09:55 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'springDispatcher'
+22/05/2017 10:46:46 org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'springDispatcher'
+22/05/2017 10:46:46 org.apache.catalina.core.StandardContext listenerStop
+GRAVE: Exception sending context destroyed event to listener instance of class com.serotonin.mango.MangoContextListener
+java.lang.NullPointerException
+	at com.serotonin.messaging.StreamTransport.removeConsumer(StreamTransport.java:48)
+	at com.serotonin.messaging.MessageControl.close(MessageControl.java:48)
+	at com.serotonin.modbus4j.ModbusMaster.closeMessageControl(ModbusMaster.java:268)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.destroy(RtuMaster.java:60)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.terminate(ModbusDataSource.java:378)
+	at com.serotonin.mango.rt.RuntimeManager.stopDataSource(RuntimeManager.java:348)
+	at com.serotonin.mango.rt.RuntimeManager.terminate(RuntimeManager.java:238)
+	at com.serotonin.mango.MangoContextListener.runtimeManagerTerminate(MangoContextListener.java:472)
+	at com.serotonin.mango.MangoContextListener.contextDestroyed(MangoContextListener.java:148)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4011)
+	at org.apache.catalina.core.StandardContext.stop(StandardContext.java:4615)
+	at org.apache.catalina.core.ContainerBase.removeChild(ContainerBase.java:924)
+	at org.apache.catalina.startup.HostConfig.undeployApps(HostConfig.java:1319)
+	at org.apache.catalina.startup.HostConfig.stop(HostConfig.java:1290)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:323)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1086)
+	at org.apache.catalina.core.ContainerBase.stop(ContainerBase.java:1098)
+	at org.apache.catalina.core.StandardEngine.stop(StandardEngine.java:448)
+	at org.apache.catalina.core.StandardService.stop(StandardService.java:587)
+	at org.apache.catalina.core.StandardServer.stop(StandardServer.java:744)
+	at org.apache.catalina.startup.Catalina.stop(Catalina.java:648)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:615)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:289)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:414)
+22/05/2017 10:46:46 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+22/05/2017 19:02:14 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+22/05/2017 19:02:29 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'springDispatcher'

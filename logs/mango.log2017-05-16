@@ -1,0 +1,1713 @@
+INFO  2017-05-16 07:45:53,940 (org.springframework.web.context.ContextLoader.initWebApplicationContext:189) - Root WebApplicationContext: initialization started 
+INFO  2017-05-16 07:45:54,438 (org.springframework.context.support.AbstractApplicationContext.prepareRefresh:412) - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@78ff9053: display name [Root WebApplicationContext]; startup date [Tue May 16 07:45:54 BRT 2017]; root of context hierarchy 
+INFO  2017-05-16 07:45:54,966 (org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:323) - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml] 
+INFO  2017-05-16 07:45:55,229 (org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory:427) - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@78ff9053]: org.springframework.beans.factory.support.DefaultListableBeanFactory@2a8ab08f 
+INFO  2017-05-16 07:45:57,362 (org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons:414) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2a8ab08f: defining beans [CompoundEventsDwr,CustomViewDwr,DataPointDetailsDwr,DataPointEditDwr,DataSourceEditDwr,DataSourceListDwr,EmportDwr,EventHandlersDwr,EventsDwr,MailingListsDwr,MaintenanceEventsDwr,MiscDwr,PointHierarchyDwr,PointLinksDwr,PublisherEditDwr,PublisherListDwr,ReportsDwr,ScheduledEventsDwr,SystemSettingsDwr,UsersDwr,ViewDwr,WatchListDwr,ScriptsDwr,localeResolver,messageSource]; root of factory hierarchy 
+INFO  2017-05-16 07:46:02,366 (org.springframework.web.context.ContextLoader.initWebApplicationContext:209) - Root WebApplicationContext: initialization completed in 8422 ms 
+INFO  2017-05-16 07:46:02,367 (com.serotonin.mango.MangoContextListener.contextInitialized:85) - Mango context starting 
+INFO  2017-05-16 07:46:07,048 (com.serotonin.mango.db.DerbyAccess.initializeImpl:72) - Initializing derby connection manager 
+INFO  2017-05-16 07:46:20,180 (com.serotonin.mango.db.upgrade.DBUpgrade.checkUpgrade:81) - Starting instance with version 1.12.4 
+INFO  2017-05-16 07:46:26,503 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+INFO  2017-05-16 07:46:29,460 (com.serotonin.mango.MangoContextListener.contextInitialized:129) - Mango context started 
+INFO  2017-05-16 07:46:29,537 (org.springframework.web.servlet.FrameworkServlet.initServletBean:257) - FrameworkServlet 'springDispatcher': initialization started 
+INFO  2017-05-16 07:46:29,539 (org.springframework.context.support.AbstractApplicationContext.prepareRefresh:412) - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@5b082d45: display name [WebApplicationContext for namespace 'springDispatcher-servlet']; startup date [Tue May 16 07:46:29 BRT 2017]; parent: org.springframework.web.context.support.XmlWebApplicationContext@78ff9053 
+INFO  2017-05-16 07:46:29,540 (org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:323) - Loading XML bean definitions from ServletContext resource [/WEB-INF/springDispatcher-servlet.xml] 
+INFO  2017-05-16 07:46:29,583 (org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory:427) - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@5b082d45]: org.springframework.beans.factory.support.DefaultListableBeanFactory@409ba134 
+INFO  2017-05-16 07:46:29,867 (org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons:414) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@409ba134: defining beans [viewResolver,defaultMessageCodeResolver,publicUrlMappings,projectExporterController,projectImporterController,compoundEventsController,dataPointDetailsController,dataPointEditController,dataSourceEditController,dataSourceListController,emportController,eventHandlersController,eventsController,helpController,loginController,logoutController,mobileLoginController,mobileLogoutController,mobileWatchListController,mailingListsController,maintenanceEventsController,pointHierarchyController,pointLinksController,publicViewController,publisherEditController,publisherListController,reportChartController,reportsController,scheduledEventsController,scriptingController,sqlController,systemSettingsController,usersController,viewsController,viewEditController,watchListController,webcamLiveFeedController,multipartResolver,commonData]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@2a8ab08f 
+INFO  2017-05-16 07:46:30,279 (org.springframework.web.servlet.FrameworkServlet.initServletBean:276) - FrameworkServlet 'springDispatcher': initialization completed in 742 ms 
+INFO  2017-05-16 07:50:11,995 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 07:50:13,258 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 07:50:14,260 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:14 aborted because a previous poll started at 2017/05/16 07:50:13 is still running 
+WARN  2017-05-16 07:50:16,259 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:16 aborted because a previous poll started at 2017/05/16 07:50:15 is still running 
+WARN  2017-05-16 07:50:18,260 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:18 aborted because a previous poll started at 2017/05/16 07:50:17 is still running 
+WARN  2017-05-16 07:50:20,260 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:20 aborted because a previous poll started at 2017/05/16 07:50:19 is still running 
+WARN  2017-05-16 07:50:22,260 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:22 aborted because a previous poll started at 2017/05/16 07:50:21 is still running 
+WARN  2017-05-16 07:50:24,259 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:24 aborted because a previous poll started at 2017/05/16 07:50:23 is still running 
+WARN  2017-05-16 07:50:26,259 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:26 aborted because a previous poll started at 2017/05/16 07:50:25 is still running 
+WARN  2017-05-16 07:50:28,260 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:28 aborted because a previous poll started at 2017/05/16 07:50:27 is still running 
+WARN  2017-05-16 07:50:30,259 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:30 aborted because a previous poll started at 2017/05/16 07:50:29 is still running 
+WARN  2017-05-16 07:50:32,259 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:32 aborted because a previous poll started at 2017/05/16 07:50:31 is still running 
+WARN  2017-05-16 07:50:34,259 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:34 aborted because a previous poll started at 2017/05/16 07:50:33 is still running 
+WARN  2017-05-16 07:50:36,259 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:36 aborted because a previous poll started at 2017/05/16 07:50:35 is still running 
+INFO  2017-05-16 07:50:36,797 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 07:50:36,879 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 07:50:37,880 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:50:37 aborted because a previous poll started at 2017/05/16 07:50:36 is still running 
+INFO  2017-05-16 07:50:55,270 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 07:50:55,509 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+INFO  2017-05-16 07:51:40,722 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 07:52:04,881 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 07:52:32,882 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 07:52:33,881 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:52:33 aborted because a previous poll started at 2017/05/16 07:52:32 is still running 
+INFO  2017-05-16 07:52:34,431 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@5412a54b
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@5412a54b
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 40 more
+WARN  2017-05-16 07:56:42,882 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 07:56:42 aborted because a previous poll started at 2017/05/16 07:56:41 is still running 
+INFO  2017-05-16 07:57:35,358 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 07:58:48,408 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 07:59:15,460 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 07:59:32,455 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 07:59:50,915 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:50,985 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:50,990 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:50,995 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:50,999 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,004 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,008 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,012 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,016 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,020 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,024 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,028 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,032 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,045 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,049 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,053 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,058 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,067 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,072 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,076 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,080 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,084 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,088 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,092 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,096 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,100 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,104 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,108 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,112 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,116 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,120 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,124 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,128 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,132 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,136 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,140 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,144 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,148 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,151 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,155 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,158 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,162 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,165 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,169 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,172 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,176 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,179 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,182 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,185 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,189 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,192 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,195 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,198 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,201 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,204 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,208 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,211 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,214 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,217 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,221 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,224 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,227 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,231 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,235 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,238 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,242 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,245 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,248 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,251 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,254 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,258 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,262 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,265 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,268 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,272 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,275 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,278 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,282 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,285 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,290 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,293 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,296 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,300 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,303 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,307 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,310 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,313 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,317 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,323 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,326 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,329 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,333 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,336 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,339 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,342 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,345 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,349 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,352 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,356 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,359 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,363 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,367 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,370 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,373 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,376 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,379 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,382 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,386 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,389 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,392 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,395 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,399 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,402 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,406 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-16 07:59:51,409 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+ERROR 2017-05-16 07:59:52,870 (com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter:52) - DWR invocation exception 
+java.lang.NullPointerException
+	at com.serotonin.messaging.StreamTransport.removeConsumer(StreamTransport.java:48)
+	at com.serotonin.messaging.MessageControl.close(MessageControl.java:48)
+	at com.serotonin.modbus4j.ModbusMaster.closeMessageControl(ModbusMaster.java:268)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.destroy(RtuMaster.java:60)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.terminate(ModbusDataSource.java:378)
+	at com.serotonin.mango.rt.RuntimeManager.stopDataSource(RuntimeManager.java:348)
+	at com.serotonin.mango.rt.RuntimeManager.saveDataSource(RuntimeManager.java:286)
+	at com.serotonin.mango.web.dwr.DataSourceListDwr.toggleDataSource(DataSourceListDwr.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+INFO  2017-05-16 08:00:33,576 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:00:34,578 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:00:34 aborted because a previous poll started at 2017/05/16 08:00:33 is still running 
+INFO  2017-05-16 08:00:39,889 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:00:58,766 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:00:59,771 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:00:59 aborted because a previous poll started at 2017/05/16 08:00:58 is still running 
+INFO  2017-05-16 08:04:56,172 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:08:14,992 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:08:15,993 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:08:15 aborted because a previous poll started at 2017/05/16 08:08:14 is still running 
+WARN  2017-05-16 08:08:25,993 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:08:26,994 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:08:26 aborted because a previous poll started at 2017/05/16 08:08:25 is still running 
+INFO  2017-05-16 08:08:27,559 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@3e162cd8
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@3e162cd8
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 40 more
+INFO  2017-05-16 08:11:20,805 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:11:28,162 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:11:29,162 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:11:29 aborted because a previous poll started at 2017/05/16 08:11:28 is still running 
+INFO  2017-05-16 08:16:59,395 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:17:21,775 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:17:22,776 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:17:22 aborted because a previous poll started at 2017/05/16 08:17:21 is still running 
+INFO  2017-05-16 08:21:20,768 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:21:22,462 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:21:22,562 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:22 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+WARN  2017-05-16 08:21:22,662 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:22 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+WARN  2017-05-16 08:21:22,762 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:22 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+WARN  2017-05-16 08:21:22,862 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:22 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+WARN  2017-05-16 08:21:22,962 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:22 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+WARN  2017-05-16 08:21:23,062 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:23 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+WARN  2017-05-16 08:21:23,162 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:23 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+WARN  2017-05-16 08:21:23,262 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:23 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+WARN  2017-05-16 08:21:23,363 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:23 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+WARN  2017-05-16 08:21:23,462 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:23 aborted because a previous poll started at 2017/05/16 08:21:22 is still running 
+INFO  2017-05-16 08:21:25,964 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:21:34,646 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:21:34,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:34 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:21:34,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:34 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:21:34,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:34 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:21:35,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:35 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:21:35,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:35 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:21:35,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:35 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:21:35,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:35 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:21:35,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:35 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:21:35,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:35 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:21:35,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:21:35 aborted because a previous poll started at 2017/05/16 08:21:34 is still running 
+WARN  2017-05-16 08:22:09,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:09 aborted because a previous poll started at 2017/05/16 08:22:08 is still running 
+WARN  2017-05-16 08:22:09,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:09 aborted because a previous poll started at 2017/05/16 08:22:09 is still running 
+WARN  2017-05-16 08:22:09,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:09 aborted because a previous poll started at 2017/05/16 08:22:09 is still running 
+WARN  2017-05-16 08:22:09,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:09 aborted because a previous poll started at 2017/05/16 08:22:09 is still running 
+WARN  2017-05-16 08:22:09,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:09 aborted because a previous poll started at 2017/05/16 08:22:09 is still running 
+WARN  2017-05-16 08:22:10,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:10 aborted because a previous poll started at 2017/05/16 08:22:09 is still running 
+WARN  2017-05-16 08:22:10,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:10 aborted because a previous poll started at 2017/05/16 08:22:10 is still running 
+WARN  2017-05-16 08:22:10,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:10 aborted because a previous poll started at 2017/05/16 08:22:10 is still running 
+WARN  2017-05-16 08:22:10,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:10 aborted because a previous poll started at 2017/05/16 08:22:10 is still running 
+WARN  2017-05-16 08:22:10,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:10 aborted because a previous poll started at 2017/05/16 08:22:10 is still running 
+WARN  2017-05-16 08:22:11,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:11 aborted because a previous poll started at 2017/05/16 08:22:10 is still running 
+WARN  2017-05-16 08:22:11,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:11 aborted because a previous poll started at 2017/05/16 08:22:11 is still running 
+WARN  2017-05-16 08:22:11,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:11 aborted because a previous poll started at 2017/05/16 08:22:11 is still running 
+WARN  2017-05-16 08:22:11,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:11 aborted because a previous poll started at 2017/05/16 08:22:11 is still running 
+WARN  2017-05-16 08:22:11,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:11 aborted because a previous poll started at 2017/05/16 08:22:11 is still running 
+WARN  2017-05-16 08:22:12,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:12 aborted because a previous poll started at 2017/05/16 08:22:11 is still running 
+WARN  2017-05-16 08:22:12,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:12 aborted because a previous poll started at 2017/05/16 08:22:12 is still running 
+WARN  2017-05-16 08:22:12,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:12 aborted because a previous poll started at 2017/05/16 08:22:12 is still running 
+WARN  2017-05-16 08:22:12,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:12 aborted because a previous poll started at 2017/05/16 08:22:12 is still running 
+WARN  2017-05-16 08:22:12,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:12 aborted because a previous poll started at 2017/05/16 08:22:12 is still running 
+WARN  2017-05-16 08:22:13,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:13 aborted because a previous poll started at 2017/05/16 08:22:12 is still running 
+WARN  2017-05-16 08:22:13,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:13 aborted because a previous poll started at 2017/05/16 08:22:13 is still running 
+WARN  2017-05-16 08:22:13,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:13 aborted because a previous poll started at 2017/05/16 08:22:13 is still running 
+WARN  2017-05-16 08:22:13,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:13 aborted because a previous poll started at 2017/05/16 08:22:13 is still running 
+WARN  2017-05-16 08:22:13,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:13 aborted because a previous poll started at 2017/05/16 08:22:13 is still running 
+WARN  2017-05-16 08:22:14,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:14 aborted because a previous poll started at 2017/05/16 08:22:13 is still running 
+WARN  2017-05-16 08:22:14,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:14 aborted because a previous poll started at 2017/05/16 08:22:14 is still running 
+WARN  2017-05-16 08:22:14,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:14 aborted because a previous poll started at 2017/05/16 08:22:14 is still running 
+WARN  2017-05-16 08:22:14,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:22:14 aborted because a previous poll started at 2017/05/16 08:22:14 is still running 
+WARN  2017-05-16 08:23:11,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:11 aborted because a previous poll started at 2017/05/16 08:23:11 is still running 
+WARN  2017-05-16 08:23:12,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:12 aborted because a previous poll started at 2017/05/16 08:23:12 is still running 
+WARN  2017-05-16 08:23:12,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:12 aborted because a previous poll started at 2017/05/16 08:23:12 is still running 
+WARN  2017-05-16 08:23:12,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:12 aborted because a previous poll started at 2017/05/16 08:23:12 is still running 
+WARN  2017-05-16 08:23:12,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:12 aborted because a previous poll started at 2017/05/16 08:23:12 is still running 
+WARN  2017-05-16 08:23:12,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:12 aborted because a previous poll started at 2017/05/16 08:23:12 is still running 
+WARN  2017-05-16 08:23:13,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:13 aborted because a previous poll started at 2017/05/16 08:23:13 is still running 
+WARN  2017-05-16 08:23:13,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:13 aborted because a previous poll started at 2017/05/16 08:23:13 is still running 
+WARN  2017-05-16 08:23:13,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:13 aborted because a previous poll started at 2017/05/16 08:23:13 is still running 
+WARN  2017-05-16 08:23:13,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:13 aborted because a previous poll started at 2017/05/16 08:23:13 is still running 
+WARN  2017-05-16 08:23:13,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:13 aborted because a previous poll started at 2017/05/16 08:23:13 is still running 
+WARN  2017-05-16 08:23:14,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:14 aborted because a previous poll started at 2017/05/16 08:23:14 is still running 
+WARN  2017-05-16 08:23:14,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:14 aborted because a previous poll started at 2017/05/16 08:23:14 is still running 
+WARN  2017-05-16 08:23:14,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:14 aborted because a previous poll started at 2017/05/16 08:23:14 is still running 
+WARN  2017-05-16 08:23:14,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:14 aborted because a previous poll started at 2017/05/16 08:23:14 is still running 
+WARN  2017-05-16 08:23:14,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:14 aborted because a previous poll started at 2017/05/16 08:23:14 is still running 
+WARN  2017-05-16 08:23:15,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:15 aborted because a previous poll started at 2017/05/16 08:23:15 is still running 
+WARN  2017-05-16 08:23:15,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:15 aborted because a previous poll started at 2017/05/16 08:23:15 is still running 
+WARN  2017-05-16 08:23:15,547 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:15 aborted because a previous poll started at 2017/05/16 08:23:15 is still running 
+WARN  2017-05-16 08:23:15,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:15 aborted because a previous poll started at 2017/05/16 08:23:15 is still running 
+WARN  2017-05-16 08:23:15,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:15 aborted because a previous poll started at 2017/05/16 08:23:15 is still running 
+WARN  2017-05-16 08:23:16,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:16 aborted because a previous poll started at 2017/05/16 08:23:16 is still running 
+WARN  2017-05-16 08:23:16,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:16 aborted because a previous poll started at 2017/05/16 08:23:16 is still running 
+WARN  2017-05-16 08:23:16,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:16 aborted because a previous poll started at 2017/05/16 08:23:16 is still running 
+WARN  2017-05-16 08:23:16,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:16 aborted because a previous poll started at 2017/05/16 08:23:16 is still running 
+WARN  2017-05-16 08:23:16,947 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:16 aborted because a previous poll started at 2017/05/16 08:23:16 is still running 
+WARN  2017-05-16 08:23:17,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:17 aborted because a previous poll started at 2017/05/16 08:23:17 is still running 
+WARN  2017-05-16 08:23:18,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:23:18 aborted because a previous poll started at 2017/05/16 08:23:18 is still running 
+WARN  2017-05-16 08:24:57,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:57 aborted because a previous poll started at 2017/05/16 08:24:57 is still running 
+WARN  2017-05-16 08:24:57,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:57 aborted because a previous poll started at 2017/05/16 08:24:57 is still running 
+WARN  2017-05-16 08:24:58,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:58 aborted because a previous poll started at 2017/05/16 08:24:57 is still running 
+WARN  2017-05-16 08:24:58,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:58 aborted because a previous poll started at 2017/05/16 08:24:58 is still running 
+WARN  2017-05-16 08:24:58,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:58 aborted because a previous poll started at 2017/05/16 08:24:58 is still running 
+WARN  2017-05-16 08:24:58,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:58 aborted because a previous poll started at 2017/05/16 08:24:58 is still running 
+WARN  2017-05-16 08:24:58,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:58 aborted because a previous poll started at 2017/05/16 08:24:58 is still running 
+WARN  2017-05-16 08:24:59,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:59 aborted because a previous poll started at 2017/05/16 08:24:58 is still running 
+WARN  2017-05-16 08:24:59,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:59 aborted because a previous poll started at 2017/05/16 08:24:59 is still running 
+WARN  2017-05-16 08:24:59,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:59 aborted because a previous poll started at 2017/05/16 08:24:59 is still running 
+WARN  2017-05-16 08:24:59,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:59 aborted because a previous poll started at 2017/05/16 08:24:59 is still running 
+WARN  2017-05-16 08:24:59,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:24:59 aborted because a previous poll started at 2017/05/16 08:24:59 is still running 
+WARN  2017-05-16 08:25:00,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:00 aborted because a previous poll started at 2017/05/16 08:24:59 is still running 
+WARN  2017-05-16 08:25:00,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:00 aborted because a previous poll started at 2017/05/16 08:25:00 is still running 
+WARN  2017-05-16 08:25:00,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:00 aborted because a previous poll started at 2017/05/16 08:25:00 is still running 
+WARN  2017-05-16 08:25:00,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:00 aborted because a previous poll started at 2017/05/16 08:25:00 is still running 
+WARN  2017-05-16 08:25:00,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:00 aborted because a previous poll started at 2017/05/16 08:25:00 is still running 
+WARN  2017-05-16 08:25:01,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:01 aborted because a previous poll started at 2017/05/16 08:25:00 is still running 
+WARN  2017-05-16 08:25:01,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:01 aborted because a previous poll started at 2017/05/16 08:25:01 is still running 
+WARN  2017-05-16 08:25:01,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:01 aborted because a previous poll started at 2017/05/16 08:25:01 is still running 
+WARN  2017-05-16 08:25:01,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:01 aborted because a previous poll started at 2017/05/16 08:25:01 is still running 
+WARN  2017-05-16 08:25:01,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:01 aborted because a previous poll started at 2017/05/16 08:25:01 is still running 
+WARN  2017-05-16 08:25:02,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:02 aborted because a previous poll started at 2017/05/16 08:25:01 is still running 
+WARN  2017-05-16 08:25:02,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:02 aborted because a previous poll started at 2017/05/16 08:25:02 is still running 
+WARN  2017-05-16 08:25:02,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:02 aborted because a previous poll started at 2017/05/16 08:25:02 is still running 
+WARN  2017-05-16 08:25:02,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:02 aborted because a previous poll started at 2017/05/16 08:25:02 is still running 
+WARN  2017-05-16 08:25:02,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:02 aborted because a previous poll started at 2017/05/16 08:25:02 is still running 
+WARN  2017-05-16 08:25:03,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:03 aborted because a previous poll started at 2017/05/16 08:25:02 is still running 
+WARN  2017-05-16 08:25:03,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:03 aborted because a previous poll started at 2017/05/16 08:25:03 is still running 
+WARN  2017-05-16 08:25:03,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:03 aborted because a previous poll started at 2017/05/16 08:25:03 is still running 
+WARN  2017-05-16 08:25:17,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:17 aborted because a previous poll started at 2017/05/16 08:25:17 is still running 
+WARN  2017-05-16 08:25:37,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:25:37 aborted because a previous poll started at 2017/05/16 08:25:37 is still running 
+WARN  2017-05-16 08:26:06,848 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:06 aborted because a previous poll started at 2017/05/16 08:26:06 is still running 
+WARN  2017-05-16 08:26:27,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:27 aborted because a previous poll started at 2017/05/16 08:26:27 is still running 
+WARN  2017-05-16 08:26:27,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:27 aborted because a previous poll started at 2017/05/16 08:26:27 is still running 
+WARN  2017-05-16 08:26:27,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:27 aborted because a previous poll started at 2017/05/16 08:26:27 is still running 
+WARN  2017-05-16 08:26:27,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:27 aborted because a previous poll started at 2017/05/16 08:26:27 is still running 
+WARN  2017-05-16 08:26:28,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:28 aborted because a previous poll started at 2017/05/16 08:26:27 is still running 
+WARN  2017-05-16 08:26:28,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:28 aborted because a previous poll started at 2017/05/16 08:26:28 is still running 
+WARN  2017-05-16 08:26:28,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:28 aborted because a previous poll started at 2017/05/16 08:26:28 is still running 
+WARN  2017-05-16 08:26:28,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:28 aborted because a previous poll started at 2017/05/16 08:26:28 is still running 
+WARN  2017-05-16 08:26:28,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:28 aborted because a previous poll started at 2017/05/16 08:26:28 is still running 
+WARN  2017-05-16 08:26:29,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:29 aborted because a previous poll started at 2017/05/16 08:26:28 is still running 
+WARN  2017-05-16 08:26:29,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:29 aborted because a previous poll started at 2017/05/16 08:26:29 is still running 
+WARN  2017-05-16 08:26:29,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:29 aborted because a previous poll started at 2017/05/16 08:26:29 is still running 
+WARN  2017-05-16 08:26:29,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:29 aborted because a previous poll started at 2017/05/16 08:26:29 is still running 
+WARN  2017-05-16 08:26:29,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:29 aborted because a previous poll started at 2017/05/16 08:26:29 is still running 
+WARN  2017-05-16 08:26:30,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:30 aborted because a previous poll started at 2017/05/16 08:26:29 is still running 
+WARN  2017-05-16 08:26:30,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:30 aborted because a previous poll started at 2017/05/16 08:26:30 is still running 
+WARN  2017-05-16 08:26:30,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:30 aborted because a previous poll started at 2017/05/16 08:26:30 is still running 
+WARN  2017-05-16 08:26:30,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:30 aborted because a previous poll started at 2017/05/16 08:26:30 is still running 
+WARN  2017-05-16 08:26:30,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:30 aborted because a previous poll started at 2017/05/16 08:26:30 is still running 
+WARN  2017-05-16 08:26:31,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:31 aborted because a previous poll started at 2017/05/16 08:26:30 is still running 
+WARN  2017-05-16 08:26:31,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:31 aborted because a previous poll started at 2017/05/16 08:26:31 is still running 
+WARN  2017-05-16 08:26:31,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:31 aborted because a previous poll started at 2017/05/16 08:26:31 is still running 
+WARN  2017-05-16 08:26:31,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:31 aborted because a previous poll started at 2017/05/16 08:26:31 is still running 
+WARN  2017-05-16 08:26:31,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:31 aborted because a previous poll started at 2017/05/16 08:26:31 is still running 
+WARN  2017-05-16 08:26:32,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:32 aborted because a previous poll started at 2017/05/16 08:26:31 is still running 
+WARN  2017-05-16 08:26:32,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:32 aborted because a previous poll started at 2017/05/16 08:26:32 is still running 
+WARN  2017-05-16 08:26:32,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:32 aborted because a previous poll started at 2017/05/16 08:26:32 is still running 
+WARN  2017-05-16 08:26:32,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:32 aborted because a previous poll started at 2017/05/16 08:26:32 is still running 
+WARN  2017-05-16 08:26:32,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:32 aborted because a previous poll started at 2017/05/16 08:26:32 is still running 
+WARN  2017-05-16 08:26:33,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:33 aborted because a previous poll started at 2017/05/16 08:26:33 is still running 
+WARN  2017-05-16 08:26:40,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:40 aborted because a previous poll started at 2017/05/16 08:26:39 is still running 
+WARN  2017-05-16 08:26:40,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:40 aborted because a previous poll started at 2017/05/16 08:26:40 is still running 
+WARN  2017-05-16 08:26:56,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:56 aborted because a previous poll started at 2017/05/16 08:26:56 is still running 
+WARN  2017-05-16 08:26:56,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:56 aborted because a previous poll started at 2017/05/16 08:26:56 is still running 
+WARN  2017-05-16 08:26:57,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:26:57 aborted because a previous poll started at 2017/05/16 08:26:56 is still running 
+WARN  2017-05-16 08:27:01,547 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:01 aborted because a previous poll started at 2017/05/16 08:27:01 is still running 
+WARN  2017-05-16 08:27:19,746 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:27:19,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:19 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:19,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:19 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,347 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:20,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:20 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:21,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:21 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:21,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:21 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+WARN  2017-05-16 08:27:21,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:21 aborted because a previous poll started at 2017/05/16 08:27:19 is still running 
+INFO  2017-05-16 08:27:21,294 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@f21f676
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@f21f676
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+WARN  2017-05-16 08:27:26,784 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:27:26,846 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:27:26,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:26 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,347 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:27,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:27 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:28,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:28 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:28,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:28 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:28,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:28 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+WARN  2017-05-16 08:27:28,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:28 aborted because a previous poll started at 2017/05/16 08:27:26 is still running 
+INFO  2017-05-16 08:27:28,393 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@6a4ea42b
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@6a4ea42b
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+WARN  2017-05-16 08:27:29,634 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:27:29,646 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:27:29,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:29 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:29,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:29 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:29,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:29 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,247 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:30,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:30 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:31,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:31 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+WARN  2017-05-16 08:27:31,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:31 aborted because a previous poll started at 2017/05/16 08:27:29 is still running 
+INFO  2017-05-16 08:27:31,195 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@6e18ab10
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@6e18ab10
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+WARN  2017-05-16 08:27:31,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:31 aborted because a previous poll started at 2017/05/16 08:27:31 is still running 
+WARN  2017-05-16 08:27:31,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:31 aborted because a previous poll started at 2017/05/16 08:27:31 is still running 
+WARN  2017-05-16 08:27:31,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:31 aborted because a previous poll started at 2017/05/16 08:27:31 is still running 
+WARN  2017-05-16 08:27:32,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:32 aborted because a previous poll started at 2017/05/16 08:27:32 is still running 
+WARN  2017-05-16 08:27:32,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:32 aborted because a previous poll started at 2017/05/16 08:27:32 is still running 
+WARN  2017-05-16 08:27:32,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:32 aborted because a previous poll started at 2017/05/16 08:27:32 is still running 
+WARN  2017-05-16 08:27:32,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:32 aborted because a previous poll started at 2017/05/16 08:27:32 is still running 
+WARN  2017-05-16 08:27:32,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:32 aborted because a previous poll started at 2017/05/16 08:27:32 is still running 
+WARN  2017-05-16 08:27:33,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:33 aborted because a previous poll started at 2017/05/16 08:27:33 is still running 
+WARN  2017-05-16 08:27:33,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:33 aborted because a previous poll started at 2017/05/16 08:27:33 is still running 
+WARN  2017-05-16 08:27:33,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:33 aborted because a previous poll started at 2017/05/16 08:27:33 is still running 
+WARN  2017-05-16 08:27:33,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:33 aborted because a previous poll started at 2017/05/16 08:27:33 is still running 
+WARN  2017-05-16 08:27:33,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:33 aborted because a previous poll started at 2017/05/16 08:27:33 is still running 
+WARN  2017-05-16 08:27:34,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:34 aborted because a previous poll started at 2017/05/16 08:27:34 is still running 
+WARN  2017-05-16 08:27:34,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:34 aborted because a previous poll started at 2017/05/16 08:27:34 is still running 
+WARN  2017-05-16 08:27:34,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:34 aborted because a previous poll started at 2017/05/16 08:27:34 is still running 
+WARN  2017-05-16 08:27:34,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:34 aborted because a previous poll started at 2017/05/16 08:27:34 is still running 
+WARN  2017-05-16 08:27:34,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:34 aborted because a previous poll started at 2017/05/16 08:27:34 is still running 
+WARN  2017-05-16 08:27:35,145 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:27:35,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:35 aborted because a previous poll started at 2017/05/16 08:27:35 is still running 
+WARN  2017-05-16 08:27:35,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:35 aborted because a previous poll started at 2017/05/16 08:27:35 is still running 
+WARN  2017-05-16 08:27:35,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:35 aborted because a previous poll started at 2017/05/16 08:27:35 is still running 
+WARN  2017-05-16 08:27:35,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:35 aborted because a previous poll started at 2017/05/16 08:27:35 is still running 
+WARN  2017-05-16 08:27:35,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:35 aborted because a previous poll started at 2017/05/16 08:27:35 is still running 
+WARN  2017-05-16 08:27:36,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:36 aborted because a previous poll started at 2017/05/16 08:27:36 is still running 
+WARN  2017-05-16 08:27:36,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:36 aborted because a previous poll started at 2017/05/16 08:27:36 is still running 
+WARN  2017-05-16 08:27:36,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:36 aborted because a previous poll started at 2017/05/16 08:27:36 is still running 
+WARN  2017-05-16 08:27:36,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:36 aborted because a previous poll started at 2017/05/16 08:27:36 is still running 
+WARN  2017-05-16 08:27:36,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:36 aborted because a previous poll started at 2017/05/16 08:27:36 is still running 
+WARN  2017-05-16 08:27:37,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:37 aborted because a previous poll started at 2017/05/16 08:27:37 is still running 
+WARN  2017-05-16 08:27:37,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:37 aborted because a previous poll started at 2017/05/16 08:27:37 is still running 
+WARN  2017-05-16 08:27:37,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:37 aborted because a previous poll started at 2017/05/16 08:27:37 is still running 
+WARN  2017-05-16 08:27:37,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:37 aborted because a previous poll started at 2017/05/16 08:27:37 is still running 
+WARN  2017-05-16 08:27:38,647 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:38 aborted because a previous poll started at 2017/05/16 08:27:38 is still running 
+WARN  2017-05-16 08:27:45,146 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:27:45,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:45 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:45,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:45 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:45,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:45 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:45,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:45 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:45,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:45 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:45,747 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:45 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:45,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:45 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:45,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:45 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:46,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:46 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:46,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:46 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:46,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:46 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:46,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:46 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:46,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:46 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:46,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:46 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+WARN  2017-05-16 08:27:46,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:27:46 aborted because a previous poll started at 2017/05/16 08:27:45 is still running 
+INFO  2017-05-16 08:27:46,717 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@5a172610
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@5a172610
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+WARN  2017-05-16 08:28:05,884 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:28:05,947 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:28:06,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:06,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:06,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:06,347 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:06,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:06,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:06,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:06,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:06,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:06,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:06 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:07,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:07 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:07,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:07 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:07,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:07 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:07,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:07 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+WARN  2017-05-16 08:28:07,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:07 aborted because a previous poll started at 2017/05/16 08:28:05 is still running 
+INFO  2017-05-16 08:28:07,472 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@30d82394
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@30d82394
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+WARN  2017-05-16 08:28:23,051 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:28:23,148 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:28:23,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:23 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:23,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:23 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:23,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:23 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:23,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:23 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:23,647 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:23 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:23,746 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:23 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:23,846 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:23 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:23,946 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:23 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:24,046 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:24 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:24,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:24 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:24,246 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:24 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:24,346 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:24 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:24,446 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:24 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:24,546 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:24 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+WARN  2017-05-16 08:28:24,646 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:24 aborted because a previous poll started at 2017/05/16 08:28:23 is still running 
+INFO  2017-05-16 08:28:24,688 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@66d2774f
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@66d2774f
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+WARN  2017-05-16 08:28:27,146 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:28:27 aborted because a previous poll started at 2017/05/16 08:28:27 is still running 
+INFO  2017-05-16 08:28:28,842 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:29:12,279 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:29:12,379 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:12 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:12,479 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:12 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:12,579 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:12 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:12,679 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:12 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:12,780 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:12 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:12,879 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:12 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:12,979 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:12 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:13,079 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:13 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:13,179 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:13 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:13,279 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:13 aborted because a previous poll started at 2017/05/16 08:29:12 is still running 
+WARN  2017-05-16 08:29:32,681 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:32 aborted because a previous poll started at 2017/05/16 08:29:32 is still running 
+WARN  2017-05-16 08:29:32,879 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:32 aborted because a previous poll started at 2017/05/16 08:29:32 is still running 
+WARN  2017-05-16 08:29:33,079 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:33 aborted because a previous poll started at 2017/05/16 08:29:32 is still running 
+WARN  2017-05-16 08:29:33,279 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:33 aborted because a previous poll started at 2017/05/16 08:29:33 is still running 
+WARN  2017-05-16 08:29:33,479 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:33 aborted because a previous poll started at 2017/05/16 08:29:33 is still running 
+WARN  2017-05-16 08:29:33,680 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:33 aborted because a previous poll started at 2017/05/16 08:29:33 is still running 
+WARN  2017-05-16 08:29:33,879 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:33 aborted because a previous poll started at 2017/05/16 08:29:33 is still running 
+WARN  2017-05-16 08:29:34,079 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:34 aborted because a previous poll started at 2017/05/16 08:29:33 is still running 
+WARN  2017-05-16 08:29:34,279 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:34 aborted because a previous poll started at 2017/05/16 08:29:34 is still running 
+WARN  2017-05-16 08:29:34,479 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:34 aborted because a previous poll started at 2017/05/16 08:29:34 is still running 
+WARN  2017-05-16 08:29:34,679 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:34 aborted because a previous poll started at 2017/05/16 08:29:34 is still running 
+WARN  2017-05-16 08:29:34,879 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:34 aborted because a previous poll started at 2017/05/16 08:29:34 is still running 
+WARN  2017-05-16 08:29:35,080 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:35 aborted because a previous poll started at 2017/05/16 08:29:34 is still running 
+WARN  2017-05-16 08:29:35,379 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:35 aborted because a previous poll started at 2017/05/16 08:29:35 is still running 
+WARN  2017-05-16 08:29:35,579 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:35 aborted because a previous poll started at 2017/05/16 08:29:35 is still running 
+WARN  2017-05-16 08:29:35,779 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:35 aborted because a previous poll started at 2017/05/16 08:29:35 is still running 
+WARN  2017-05-16 08:29:36,879 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:29:36,979 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:36 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,079 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,179 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,280 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,379 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,479 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,579 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,679 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,779 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,879 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:37,979 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:37 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:38,079 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:38 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:38,179 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:38 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:38,279 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:38 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+WARN  2017-05-16 08:29:38,379 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:29:38 aborted because a previous poll started at 2017/05/16 08:29:36 is still running 
+INFO  2017-05-16 08:29:38,394 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@61ea2c55
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@61ea2c55
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+INFO  2017-05-16 08:29:50,776 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:30:08,641 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:30:09,642 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:30:09 aborted because a previous poll started at 2017/05/16 08:30:08 is still running 
+INFO  2017-05-16 08:30:18,535 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:30:29,263 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:30:30,263 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:30:30 aborted because a previous poll started at 2017/05/16 08:30:29 is still running 
+WARN  2017-05-16 08:30:44,264 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-16 08:30:45,263 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:30:45 aborted because a previous poll started at 2017/05/16 08:30:44 is still running 
+INFO  2017-05-16 08:30:45,782 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@605f2094
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@605f2094
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+WARN  2017-05-16 08:31:51,278 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+INFO  2017-05-16 08:33:48,710 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:34:10,411 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:34:11,412 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:34:11 aborted because a previous poll started at 2017/05/16 08:34:10 is still running 
+INFO  2017-05-16 08:40:40,518 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:42:03,100 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:42:04,101 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:42:04 aborted because a previous poll started at 2017/05/16 08:42:03 is still running 
+INFO  2017-05-16 08:43:50,806 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:44:23,156 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:44:24,157 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:44:24 aborted because a previous poll started at 2017/05/16 08:44:23 is still running 
+INFO  2017-05-16 08:47:19,546 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-16 08:48:08,953 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-16 08:48:09,953 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/16 08:48:09 aborted because a previous poll started at 2017/05/16 08:48:08 is still running 
+INFO  2017-05-16 08:48:39,455 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: java.io.IOException
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.sendFunctionGroup(ModbusMaster.java:301)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:248)
+	at com.serotonin.modbus4j.ModbusMaster.getValue(ModbusMaster.java:97)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:373)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.GeneratedMethodAccessor147.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.io.IOException
+	at gnu.io.RXTXPort$SerialOutputStream.flush(RXTXPort.java:1231)
+	at com.serotonin.messaging.StreamTransport.write(StreamTransport.java:54)
+	at com.serotonin.messaging.MessageControl.write(MessageControl.java:184)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:102)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 41 more
+ERROR 2017-05-16 08:48:46,625 (com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter:52) - DWR invocation exception 
+java.lang.NullPointerException
+	at com.serotonin.messaging.StreamTransport.removeConsumer(StreamTransport.java:48)
+	at com.serotonin.messaging.MessageControl.close(MessageControl.java:48)
+	at com.serotonin.modbus4j.ModbusMaster.closeMessageControl(ModbusMaster.java:268)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.destroy(RtuMaster.java:60)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.terminate(ModbusDataSource.java:378)
+	at com.serotonin.mango.rt.RuntimeManager.stopDataSource(RuntimeManager.java:348)
+	at com.serotonin.mango.rt.RuntimeManager.saveDataSource(RuntimeManager.java:286)
+	at com.serotonin.mango.web.dwr.DataSourceListDwr.toggleDataSource(DataSourceListDwr.java:68)
+	at sun.reflect.GeneratedMethodAccessor189.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+INFO  2017-05-16 08:49:41,819 (org.springframework.context.support.AbstractApplicationContext.doClose:816) - Closing org.springframework.web.context.support.XmlWebApplicationContext@5b082d45: display name [WebApplicationContext for namespace 'springDispatcher-servlet']; startup date [Tue May 16 07:46:29 BRT 2017]; parent: org.springframework.web.context.support.XmlWebApplicationContext@78ff9053 
+INFO  2017-05-16 08:49:41,819 (org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons:392) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@409ba134: defining beans [viewResolver,defaultMessageCodeResolver,publicUrlMappings,projectExporterController,projectImporterController,compoundEventsController,dataPointDetailsController,dataPointEditController,dataSourceEditController,dataSourceListController,emportController,eventHandlersController,eventsController,helpController,loginController,logoutController,mobileLoginController,mobileLogoutController,mobileWatchListController,mailingListsController,maintenanceEventsController,pointHierarchyController,pointLinksController,publicViewController,publisherEditController,publisherListController,reportChartController,reportsController,scheduledEventsController,scriptingController,sqlController,systemSettingsController,usersController,viewsController,viewEditController,watchListController,webcamLiveFeedController,multipartResolver,commonData]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@2a8ab08f 
+INFO  2017-05-16 08:49:41,985 (com.serotonin.mango.MangoContextListener.contextDestroyed:134) - Mango context terminating 
+INFO  2017-05-16 08:49:41,997 (com.serotonin.mango.db.DerbyAccess.terminate:93) - Stopping database 
+INFO  2017-05-16 08:49:42,236 (com.serotonin.mango.MangoContextListener.contextDestroyed:158) - Mango context terminated 
+INFO  2017-05-16 08:49:42,238 (org.springframework.context.support.AbstractApplicationContext.doClose:816) - Closing org.springframework.web.context.support.XmlWebApplicationContext@78ff9053: display name [Root WebApplicationContext]; startup date [Tue May 16 07:45:54 BRT 2017]; root of context hierarchy 
+INFO  2017-05-16 08:49:42,238 (org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons:392) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2a8ab08f: defining beans [CompoundEventsDwr,CustomViewDwr,DataPointDetailsDwr,DataPointEditDwr,DataSourceEditDwr,DataSourceListDwr,EmportDwr,EventHandlersDwr,EventsDwr,MailingListsDwr,MaintenanceEventsDwr,MiscDwr,PointHierarchyDwr,PointLinksDwr,PublisherEditDwr,PublisherListDwr,ReportsDwr,ScheduledEventsDwr,SystemSettingsDwr,UsersDwr,ViewDwr,WatchListDwr,ScriptsDwr,localeResolver,messageSource]; root of factory hierarchy 

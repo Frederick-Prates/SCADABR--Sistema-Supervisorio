@@ -1,0 +1,48 @@
+14/05/2017 18:16:40 org.apache.jk.common.MsgAjp processHeader
+GRAVE: BAD packet signature 5635
+14/05/2017 18:16:45 org.apache.jk.common.ChannelSocket receive
+AVISO: can't read body, waited #256
+14/05/2017 18:16:45 org.apache.jk.common.ChannelSocket processConnection
+AVISO: Closing ajp connection -1
+14/05/2017 18:16:46 org.apache.jk.common.MsgAjp processHeader
+GRAVE: BAD packet signature 5635
+14/05/2017 18:16:51 org.apache.jk.common.ChannelSocket receive
+AVISO: can't read body, waited #256
+14/05/2017 18:16:51 org.apache.jk.common.ChannelSocket processConnection
+AVISO: Closing ajp connection -1
+14/05/2017 18:19:50 org.apache.jk.common.MsgAjp processHeader
+GRAVE: BAD packet signature 5635
+14/05/2017 18:19:55 org.apache.jk.common.ChannelSocket receive
+AVISO: can't read body, waited #256
+14/05/2017 18:19:55 org.apache.jk.common.ChannelSocket processConnection
+AVISO: Closing ajp connection -1
+14/05/2017 18:19:56 org.apache.jk.common.MsgAjp processHeader
+GRAVE: BAD packet signature 5635
+14/05/2017 18:20:01 org.apache.jk.common.ChannelSocket receive
+AVISO: can't read body, waited #256
+14/05/2017 18:20:01 org.apache.jk.common.ChannelSocket processConnection
+AVISO: Closing ajp connection -1
+14/05/2017 22:58:43 org.apache.jk.common.MsgAjp processHeader
+GRAVE: BAD packet signature 5635
+14/05/2017 22:58:48 org.apache.jk.common.ChannelSocket receive
+AVISO: can't read body, waited #256
+14/05/2017 22:58:48 org.apache.jk.common.ChannelSocket processConnection
+AVISO: Closing ajp connection -1
+14/05/2017 22:58:49 org.apache.jk.common.MsgAjp processHeader
+GRAVE: BAD packet signature 5635
+14/05/2017 22:58:54 org.apache.jk.common.ChannelSocket receive
+AVISO: can't read body, waited #256
+14/05/2017 22:58:54 org.apache.jk.common.ChannelSocket processConnection
+AVISO: Closing ajp connection -1
+14/05/2017 23:01:34 org.apache.jk.common.MsgAjp processHeader
+GRAVE: BAD packet signature 5635
+14/05/2017 23:01:39 org.apache.jk.common.ChannelSocket receive
+AVISO: can't read body, waited #256
+14/05/2017 23:01:39 org.apache.jk.common.ChannelSocket processConnection
+AVISO: Closing ajp connection -1
+14/05/2017 23:01:40 org.apache.jk.common.MsgAjp processHeader
+GRAVE: BAD packet signature 5635
+14/05/2017 23:01:45 org.apache.jk.common.ChannelSocket receive
+AVISO: can't read body, waited #256
+14/05/2017 23:01:45 org.apache.jk.common.ChannelSocket processConnection
+AVISO: Closing ajp connection -1

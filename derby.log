@@ -1,0 +1,22 @@
+----------------------------------------------------------------
+2017-05-22 22:02:20.123 GMT:
+ Booting Derby version The Apache Software Foundation - Apache Derby - 10.6.1.0 - (938214): instance a816c00e-015c-322e-b0bc-000005d1f358 
+on database directory C:\Program Files\ScadaBR\bin\scadabrDB   with class loader WebappClassLoader
+  delegate: false
+  repositories:
+    /WEB-INF/classes/
+----------> Parent Classloader:
+org.apache.catalina.loader.StandardClassLoader@7b479feb
+
+
+Database Class Loader started - derby.database.classpath=''
+
+2017-05-23 11:51:50.193 GMT:
+Shutting down instance a816c00e-015c-322e-b0bc-000005d1f358 with class loader WebappClassLoader
+  delegate: false
+  repositories:
+    /WEB-INF/classes/
+----------> Parent Classloader:
+org.apache.catalina.loader.StandardClassLoader@7b479feb
+ 
+----------------------------------------------------------------

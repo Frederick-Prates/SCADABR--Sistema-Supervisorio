@@ -1,0 +1,16 @@
+15/05/2017 07:15:52 org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'springDispatcher'
+15/05/2017 07:15:55 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+15/05/2017 09:19:21 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+15/05/2017 09:19:35 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'springDispatcher'
+15/05/2017 09:34:52 org.apache.catalina.core.ApplicationContext log
+INFO: Destroying Spring FrameworkServlet 'springDispatcher'
+15/05/2017 09:35:31 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+15/05/2017 09:36:35 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+15/05/2017 09:36:58 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring FrameworkServlet 'springDispatcher'

@@ -1,0 +1,1407 @@
+INFO  2017-05-22 09:09:36,050 (org.springframework.web.context.ContextLoader.initWebApplicationContext:189) - Root WebApplicationContext: initialization started 
+INFO  2017-05-22 09:09:36,206 (org.springframework.context.support.AbstractApplicationContext.prepareRefresh:412) - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@1b0c6cfc: display name [Root WebApplicationContext]; startup date [Mon May 22 09:09:36 BRT 2017]; root of context hierarchy 
+INFO  2017-05-22 09:09:36,319 (org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:323) - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml] 
+INFO  2017-05-22 09:09:36,389 (org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory:427) - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@1b0c6cfc]: org.springframework.beans.factory.support.DefaultListableBeanFactory@6c913dc1 
+INFO  2017-05-22 09:09:37,271 (org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons:414) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c913dc1: defining beans [CompoundEventsDwr,CustomViewDwr,DataPointDetailsDwr,DataPointEditDwr,DataSourceEditDwr,DataSourceListDwr,EmportDwr,EventHandlersDwr,EventsDwr,MailingListsDwr,MaintenanceEventsDwr,MiscDwr,PointHierarchyDwr,PointLinksDwr,PublisherEditDwr,PublisherListDwr,ReportsDwr,ScheduledEventsDwr,SystemSettingsDwr,UsersDwr,ViewDwr,WatchListDwr,ScriptsDwr,localeResolver,messageSource]; root of factory hierarchy 
+INFO  2017-05-22 09:09:40,168 (org.springframework.web.context.ContextLoader.initWebApplicationContext:209) - Root WebApplicationContext: initialization completed in 4112 ms 
+INFO  2017-05-22 09:09:40,168 (com.serotonin.mango.MangoContextListener.contextInitialized:85) - Mango context starting 
+INFO  2017-05-22 09:09:46,141 (com.serotonin.mango.db.DerbyAccess.initializeImpl:72) - Initializing derby connection manager 
+INFO  2017-05-22 09:09:49,392 (com.serotonin.mango.db.upgrade.DBUpgrade.checkUpgrade:81) - Starting instance with version 1.12.4 
+INFO  2017-05-22 09:09:54,923 (com.serotonin.mango.MangoContextListener.contextInitialized:129) - Mango context started 
+INFO  2017-05-22 09:09:55,063 (org.springframework.web.servlet.FrameworkServlet.initServletBean:257) - FrameworkServlet 'springDispatcher': initialization started 
+INFO  2017-05-22 09:09:55,065 (org.springframework.context.support.AbstractApplicationContext.prepareRefresh:412) - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@771931f8: display name [WebApplicationContext for namespace 'springDispatcher-servlet']; startup date [Mon May 22 09:09:55 BRT 2017]; parent: org.springframework.web.context.support.XmlWebApplicationContext@1b0c6cfc 
+INFO  2017-05-22 09:09:55,065 (org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:323) - Loading XML bean definitions from ServletContext resource [/WEB-INF/springDispatcher-servlet.xml] 
+INFO  2017-05-22 09:09:55,114 (org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory:427) - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@771931f8]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7433c78b 
+INFO  2017-05-22 09:09:56,027 (org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons:414) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7433c78b: defining beans [viewResolver,defaultMessageCodeResolver,publicUrlMappings,projectExporterController,projectImporterController,compoundEventsController,dataPointDetailsController,dataPointEditController,dataSourceEditController,dataSourceListController,emportController,eventHandlersController,eventsController,helpController,loginController,logoutController,mobileLoginController,mobileLogoutController,mobileWatchListController,mailingListsController,maintenanceEventsController,pointHierarchyController,pointLinksController,publicViewController,publisherEditController,publisherListController,reportChartController,reportsController,scheduledEventsController,scriptingController,sqlController,systemSettingsController,usersController,viewsController,viewEditController,watchListController,webcamLiveFeedController,multipartResolver,commonData]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6c913dc1 
+INFO  2017-05-22 09:09:56,447 (org.springframework.web.servlet.FrameworkServlet.initServletBean:276) - FrameworkServlet 'springDispatcher': initialization completed in 1383 ms 
+INFO  2017-05-22 09:10:42,027 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-22 09:11:00,694 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.forcePointRead:352) - Error during forcePointRead 
+com.serotonin.modbus4j.exception.ModbusTransportException: not initialized
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:241)
+	at com.serotonin.modbus4j.ModbusMaster.getValue(ModbusMaster.java:97)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.forcePointRead(ModbusDataSource.java:339)
+	at com.serotonin.mango.rt.RuntimeManager.forcePointRead(RuntimeManager.java:522)
+	at com.serotonin.mango.web.dwr.BaseDwr.forcePointRead(BaseDwr.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 09:11:02,870 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.forcePointRead:352) - Error during forcePointRead 
+com.serotonin.modbus4j.exception.ModbusTransportException: not initialized
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:241)
+	at com.serotonin.modbus4j.ModbusMaster.getValue(ModbusMaster.java:97)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.forcePointRead(ModbusDataSource.java:339)
+	at com.serotonin.mango.rt.RuntimeManager.forcePointRead(RuntimeManager.java:522)
+	at com.serotonin.mango.web.dwr.BaseDwr.forcePointRead(BaseDwr.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+INFO  2017-05-22 09:11:31,434 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-22 09:12:34,432 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+INFO  2017-05-22 09:13:04,389 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: java.lang.NullPointerException
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:357)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+INFO  2017-05-22 09:13:08,328 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: java.lang.NullPointerException
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:357)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+INFO  2017-05-22 09:13:38,912 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: java.lang.NullPointerException
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:357)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NullPointerException
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 39 more
+INFO  2017-05-22 09:14:09,665 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 
+INFO  2017-05-22 09:15:52,672 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-22 09:16:32,673 (com.serotonin.messaging.WaitingRoom.enter:36) - Duplicate waiting room key found. Waiting for member to leave. 
+WARN  2017-05-22 09:16:33,672 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/22 09:16:33 aborted because a previous poll started at 2017/05/22 09:16:32 is still running 
+INFO  2017-05-22 09:16:34,225 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue:411) - Error setting point value 
+com.serotonin.modbus4j.exception.ModbusTransportException: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@2afe9401
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:78)
+	at com.serotonin.modbus4j.ModbusMaster.send(ModbusMaster.java:74)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:337)
+	at com.serotonin.modbus4j.ModbusMaster.setHoldingRegisterBit(ModbusMaster.java:383)
+	at com.serotonin.modbus4j.ModbusMaster.setValue(ModbusMaster.java:135)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.setPointValue(ModbusDataSource.java:401)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:493)
+	at com.serotonin.mango.rt.RuntimeManager.setDataPointValue(RuntimeManager.java:476)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPointImpl(BaseDwr.java:199)
+	at com.serotonin.mango.web.dwr.BaseDwr.setPoint(BaseDwr.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: com.serotonin.messaging.TimeoutException: request=com.serotonin.modbus4j.serial.rtu.RtuMessageRequest@2afe9401
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:118)
+	at com.serotonin.messaging.MessageControl.send(MessageControl.java:83)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.sendImpl(RtuMaster.java:72)
+	... 40 more
+WARN  2017-05-22 09:52:28,673 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/22 09:52:28 aborted because a previous poll started at 2017/05/22 09:52:27 is still running 
+WARN  2017-05-22 09:52:29,672 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/22 09:52:29 aborted because a previous poll started at 2017/05/22 09:52:27 is still running 
+WARN  2017-05-22 09:52:30,673 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/22 09:52:30 aborted because a previous poll started at 2017/05/22 09:52:27 is still running 
+ERROR 2017-05-22 09:53:15,182 (com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter:52) - DWR invocation exception 
+java.lang.NullPointerException
+	at com.serotonin.messaging.StreamTransport.removeConsumer(StreamTransport.java:48)
+	at com.serotonin.messaging.MessageControl.close(MessageControl.java:48)
+	at com.serotonin.modbus4j.ModbusMaster.closeMessageControl(ModbusMaster.java:268)
+	at com.serotonin.modbus4j.serial.rtu.RtuMaster.destroy(RtuMaster.java:60)
+	at com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.terminate(ModbusDataSource.java:378)
+	at com.serotonin.mango.rt.RuntimeManager.stopDataSource(RuntimeManager.java:348)
+	at com.serotonin.mango.rt.RuntimeManager.saveDataSource(RuntimeManager.java:286)
+	at com.serotonin.mango.web.dwr.DataSourceListDwr.toggleDataSource(DataSourceListDwr.java:68)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.directwebremoting.impl.ExecuteAjaxFilter.doFilter(ExecuteAjaxFilter.java:34)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.dwr.util.LoggedInAjaxFilter.doFilter(LoggedInAjaxFilter.java:39)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.web.dwr.LocalizationFilter.doFilter(LocalizationFilter.java:42)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at com.serotonin.mango.web.filter.ExceptionDetectionFilter.doFilter(ExceptionDetectionFilter.java:40)
+	at org.directwebremoting.impl.DefaultRemoter$1.doFilter(DefaultRemoter.java:428)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:431)
+	at org.directwebremoting.impl.DefaultRemoter.execute(DefaultRemoter.java:283)
+	at org.directwebremoting.servlet.PlainCallHandler.handle(PlainCallHandler.java:52)
+	at org.directwebremoting.servlet.UrlProcessor.handle(UrlProcessor.java:101)
+	at org.directwebremoting.servlet.DwrServlet.doPost(DwrServlet.java:146)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:637)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:852)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Unknown Source)
+INFO  2017-05-22 09:53:48,665 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+WARN  2017-05-22 09:53:49,666 (com.serotonin.mango.rt.dataSource.PollingDataSource.scheduleTimeout:63) - Arduino: poll at 2017/05/22 09:53:49 aborted because a previous poll started at 2017/05/22 09:53:48 is still running 
+WARN  2017-05-22 10:45:08,929 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:08,963 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:08,968 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:08,972 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:08,976 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,000 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,004 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,008 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,013 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,017 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,021 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,026 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,030 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,044 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,056 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,061 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,065 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,070 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,080 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,084 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,088 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,097 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,101 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,105 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,111 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,115 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,120 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,124 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,127 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,131 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,135 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,139 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,143 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,147 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,151 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,155 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,160 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,164 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,168 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,172 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,177 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,181 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,185 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,189 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,193 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,197 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,201 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,205 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,210 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,214 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,218 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,222 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,227 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,231 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,236 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,240 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,244 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,248 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,253 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,257 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,261 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,265 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,269 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,273 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,277 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,281 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,285 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,289 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,294 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,298 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,305 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,309 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,312 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,316 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,320 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,324 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,327 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,330 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,333 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,336 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,340 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,344 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,347 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,350 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,353 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,356 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,359 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,362 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,366 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,369 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,372 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,376 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,379 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,382 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,386 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,389 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,392 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,395 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,399 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,402 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,405 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,409 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,412 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,415 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,419 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,428 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,432 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,435 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,439 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,443 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,447 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,450 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,454 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,457 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,461 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,464 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,468 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,471 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,474 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,478 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,482 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,485 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,488 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,492 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,495 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,499 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,503 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,506 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,509 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,512 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,515 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,519 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,522 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,525 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,529 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,532 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,536 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,539 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,542 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,547 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,551 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,554 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,558 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,561 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,564 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,567 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,571 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,574 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,578 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,581 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,584 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,588 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,591 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,594 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,598 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,601 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,605 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,608 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,611 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,614 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,617 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,621 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,624 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,628 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,631 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,635 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,638 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,641 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,645 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,648 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,652 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,655 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,658 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,662 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,665 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+WARN  2017-05-22 10:45:09,668 (com.serotonin.mango.rt.dataSource.modbus.ModbusDataSource.receivedException:449) - Modbus exception 
+java.io.IOException: No error in nativeavailable
+	at gnu.io.RXTXPort.nativeavailable(Native Method)
+	at gnu.io.RXTXPort$SerialInputStream.available(RXTXPort.java:1596)
+	at com.serotonin.messaging.InputStreamListener.run(InputStreamListener.java:63)
+	at java.lang.Thread.run(Unknown Source)
+INFO  2017-05-22 10:46:46,866 (org.springframework.context.support.AbstractApplicationContext.doClose:816) - Closing org.springframework.web.context.support.XmlWebApplicationContext@771931f8: display name [WebApplicationContext for namespace 'springDispatcher-servlet']; startup date [Mon May 22 09:09:55 BRT 2017]; parent: org.springframework.web.context.support.XmlWebApplicationContext@1b0c6cfc 
+INFO  2017-05-22 10:46:46,867 (org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons:392) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7433c78b: defining beans [viewResolver,defaultMessageCodeResolver,publicUrlMappings,projectExporterController,projectImporterController,compoundEventsController,dataPointDetailsController,dataPointEditController,dataSourceEditController,dataSourceListController,emportController,eventHandlersController,eventsController,helpController,loginController,logoutController,mobileLoginController,mobileLogoutController,mobileWatchListController,mailingListsController,maintenanceEventsController,pointHierarchyController,pointLinksController,publicViewController,publisherEditController,publisherListController,reportChartController,reportsController,scheduledEventsController,scriptingController,sqlController,systemSettingsController,usersController,viewsController,viewEditController,watchListController,webcamLiveFeedController,multipartResolver,commonData]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@6c913dc1 
+INFO  2017-05-22 10:46:46,879 (com.serotonin.mango.MangoContextListener.contextDestroyed:134) - Mango context terminating 
+INFO  2017-05-22 10:46:46,935 (org.springframework.context.support.AbstractApplicationContext.doClose:816) - Closing org.springframework.web.context.support.XmlWebApplicationContext@1b0c6cfc: display name [Root WebApplicationContext]; startup date [Mon May 22 09:09:36 BRT 2017]; root of context hierarchy 
+INFO  2017-05-22 10:46:46,935 (org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons:392) - Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c913dc1: defining beans [CompoundEventsDwr,CustomViewDwr,DataPointDetailsDwr,DataPointEditDwr,DataSourceEditDwr,DataSourceListDwr,EmportDwr,EventHandlersDwr,EventsDwr,MailingListsDwr,MaintenanceEventsDwr,MiscDwr,PointHierarchyDwr,PointLinksDwr,PublisherEditDwr,PublisherListDwr,ReportsDwr,ScheduledEventsDwr,SystemSettingsDwr,UsersDwr,ViewDwr,WatchListDwr,ScriptsDwr,localeResolver,messageSource]; root of factory hierarchy 
+INFO  2017-05-22 19:02:14,109 (org.springframework.web.context.ContextLoader.initWebApplicationContext:189) - Root WebApplicationContext: initialization started 
+INFO  2017-05-22 19:02:14,277 (org.springframework.context.support.AbstractApplicationContext.prepareRefresh:412) - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@68acfc3: display name [Root WebApplicationContext]; startup date [Mon May 22 19:02:14 BRT 2017]; root of context hierarchy 
+INFO  2017-05-22 19:02:14,399 (org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:323) - Loading XML bean definitions from ServletContext resource [/WEB-INF/applicationContext.xml] 
+INFO  2017-05-22 19:02:14,487 (org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory:427) - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@68acfc3]: org.springframework.beans.factory.support.DefaultListableBeanFactory@31e46a68 
+INFO  2017-05-22 19:02:14,901 (org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons:414) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@31e46a68: defining beans [CompoundEventsDwr,CustomViewDwr,DataPointDetailsDwr,DataPointEditDwr,DataSourceEditDwr,DataSourceListDwr,EmportDwr,EventHandlersDwr,EventsDwr,MailingListsDwr,MaintenanceEventsDwr,MiscDwr,PointHierarchyDwr,PointLinksDwr,PublisherEditDwr,PublisherListDwr,ReportsDwr,ScheduledEventsDwr,SystemSettingsDwr,UsersDwr,ViewDwr,WatchListDwr,ScriptsDwr,localeResolver,messageSource]; root of factory hierarchy 
+INFO  2017-05-22 19:02:16,185 (org.springframework.web.context.ContextLoader.initWebApplicationContext:209) - Root WebApplicationContext: initialization completed in 2037 ms 
+INFO  2017-05-22 19:02:16,186 (com.serotonin.mango.MangoContextListener.contextInitialized:85) - Mango context starting 
+INFO  2017-05-22 19:02:18,998 (com.serotonin.mango.db.DerbyAccess.initializeImpl:72) - Initializing derby connection manager 
+INFO  2017-05-22 19:02:25,340 (com.serotonin.mango.db.upgrade.DBUpgrade.checkUpgrade:81) - Starting instance with version 1.12.4 
+INFO  2017-05-22 19:02:29,334 (com.serotonin.mango.rt.RuntimeManager.initializeDataSource:323) - Data source 'Arduino' initialized 
+INFO  2017-05-22 19:02:29,658 (com.serotonin.mango.MangoContextListener.contextInitialized:129) - Mango context started 
+INFO  2017-05-22 19:02:29,699 (org.springframework.web.servlet.FrameworkServlet.initServletBean:257) - FrameworkServlet 'springDispatcher': initialization started 
+INFO  2017-05-22 19:02:29,700 (org.springframework.context.support.AbstractApplicationContext.prepareRefresh:412) - Refreshing org.springframework.web.context.support.XmlWebApplicationContext@265ef79f: display name [WebApplicationContext for namespace 'springDispatcher-servlet']; startup date [Mon May 22 19:02:29 BRT 2017]; parent: org.springframework.web.context.support.XmlWebApplicationContext@68acfc3 
+INFO  2017-05-22 19:02:29,701 (org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions:323) - Loading XML bean definitions from ServletContext resource [/WEB-INF/springDispatcher-servlet.xml] 
+INFO  2017-05-22 19:02:29,753 (org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory:427) - Bean factory for application context [org.springframework.web.context.support.XmlWebApplicationContext@265ef79f]: org.springframework.beans.factory.support.DefaultListableBeanFactory@17773a14 
+INFO  2017-05-22 19:02:30,042 (org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons:414) - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17773a14: defining beans [viewResolver,defaultMessageCodeResolver,publicUrlMappings,projectExporterController,projectImporterController,compoundEventsController,dataPointDetailsController,dataPointEditController,dataSourceEditController,dataSourceListController,emportController,eventHandlersController,eventsController,helpController,loginController,logoutController,mobileLoginController,mobileLogoutController,mobileWatchListController,mailingListsController,maintenanceEventsController,pointHierarchyController,pointLinksController,publicViewController,publisherEditController,publisherListController,reportChartController,reportsController,scheduledEventsController,scriptingController,sqlController,systemSettingsController,usersController,viewsController,viewEditController,watchListController,webcamLiveFeedController,multipartResolver,commonData]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@31e46a68 
+INFO  2017-05-22 19:02:30,385 (org.springframework.web.servlet.FrameworkServlet.initServletBean:276) - FrameworkServlet 'springDispatcher': initialization completed in 686 ms 
+INFO  2017-05-22 19:03:29,578 (com.serotonin.mango.rt.RuntimeManager.stopDataSource:351) - Data source 'Arduino' stopped 

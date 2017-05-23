@@ -1,0 +1,31 @@
+[2017-05-13 18:25:58] [info] Commons Daemon procrun (1.0.2.0) started
+[2017-05-13 18:25:59] [info] Service Tomcat6 name ScadaBR 1.0 - Apache Tomcat
+[2017-05-13 18:26:00] [info] Service Tomcat6 installed
+[2017-05-13 18:26:01] [info] Commons Daemon procrun finished.
+[2017-05-13 18:27:10] [info] Commons Daemon procrun (1.0.2.0) started
+[2017-05-13 18:27:10] [info] Updating service...
+[2017-05-13 18:27:11] [info] Service Tomcat6 updated
+[2017-05-13 18:27:11] [info] Update service finished.
+[2017-05-13 18:27:11] [info] Commons Daemon procrun finished.
+[2017-05-13 18:27:13] [info] Commons Daemon procrun (1.0.2.0) started
+[2017-05-13 18:27:13] [info] Updating service...
+[2017-05-13 18:27:13] [info] Service Tomcat6 updated
+[2017-05-13 18:27:13] [info] Update service finished.
+[2017-05-13 18:27:13] [info] Commons Daemon procrun finished.
+[2017-05-13 18:27:26] [info] Commons Daemon procrun (1.0.2.0) started
+[2017-05-13 18:27:26] [info] Running Service...
+[2017-05-13 18:27:26] [info] Starting service...
+[2017-05-13 18:27:29] [info] Service started in 2133 ms.
+[2017-05-13 18:30:17] [info] Stopping service...
+[2017-05-13 18:30:22] [info] Service stopped.
+[2017-05-13 18:30:22] [info] Run service finished.
+[2017-05-13 18:30:22] [info] Commons Daemon procrun finished.
+[2017-05-13 18:31:36] [info] Commons Daemon procrun (1.0.2.0) started
+[2017-05-13 18:31:36] [info] Running Service...
+[2017-05-13 18:31:36] [info] Starting service...
+[2017-05-13 18:31:37] [info] Service started in 1077 ms.
+[2017-05-15 07:15:51] [info] Console SHUTDOWN event signaled
+[2017-05-15 07:15:51] [info] Stopping service...
+[2017-05-15 07:15:57] [info] Service stopped.
+[2017-05-15 07:15:57] [info] Run service finished.
+[2017-05-15 07:15:58] [info] Commons Daemon procrun finished.
